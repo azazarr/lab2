@@ -15,7 +15,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, T
     private static final int ID = 0;
 
     public static String removeQuote(String s) {
-        return  s.replaceAll("\","");
+        return  s.replaceAll("","");
 
     }
 
