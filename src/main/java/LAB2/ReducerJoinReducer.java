@@ -8,5 +8,5 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritable, Text> {
 
-    public void reduce(AirportWritable key, )
+    public void reduce(AirportWritable key, Iterable)
 }
