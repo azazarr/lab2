@@ -21,7 +21,8 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         while (iterator.hasNext()) {
             double delay = Double.parseDouble(iterator.next().toString());
             counter++;
-            totalDelay +=
+            totalDelay += delay;
+            
         }
     }
 }
