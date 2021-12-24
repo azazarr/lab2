@@ -6,6 +6,6 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 
 
-public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritable> {
+public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritable, Text> {
     public class
 }
