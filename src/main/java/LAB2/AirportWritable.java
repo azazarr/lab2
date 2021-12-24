@@ -4,7 +4,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class AirportWritable {
+public class AirportWritable implements  {
     int AIRID, IND;
 
     public AirportWritable () {}
