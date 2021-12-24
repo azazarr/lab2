@@ -19,5 +19,5 @@ public class AirportWritable {
         return AIRID;
     }
 
-    public void readFiels(DataInput)
+    public void readFiels(DataInput dataInput)
 }
