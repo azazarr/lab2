@@ -8,5 +8,5 @@ import org.apache.hadoop.io.LongWritable;
 
 public class AirportPartitioner {
     @Override
-    public int getPartition(Air)
+    public int getPartition(Airpo)
 }
