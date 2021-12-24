@@ -22,6 +22,6 @@ public class AirportWritable {
     }
 
     public void readFiels(DataInput dataInput) throws IOException {
-        dataOutput
+        dataOutput.writeInt
     }
 }
