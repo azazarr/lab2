@@ -13,7 +13,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, T
     private static final int helper = 0;
     private static final int AIR_ID = 0;
     protected void map (LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-                                                                                                   String[] airposrts = value
+                                                                                                   String[] airposrts = value.toString()
                                                                                             }
 
 
