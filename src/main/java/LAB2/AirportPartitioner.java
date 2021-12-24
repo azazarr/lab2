@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.io.LongWritable;
 
-public class AirportPartitioner extends Partitioner<{
+public class AirportPartitioner extends Partitioner<AirportWritable{
 
     public int getPartition(AirportWritable key, Text value, int nReduceTask){
         return key.getAIRID() % nReduceTask
