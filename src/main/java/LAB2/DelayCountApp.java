@@ -4,7 +4,7 @@ import org.apache.hadoop.fs.Path;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.lib.In;
+import org.apache.hadoop.mapreduce.lib.input.;
 import org.apache.hadoop.io.LongWritable;
 
 import java.io.IOException;
