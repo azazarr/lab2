@@ -8,6 +8,7 @@ import org.apache.hadoop.mapreduce.v2.app.webapp.dao.CounterGroupInfo;
 public class GroupCompator extends WritableComparable {
     protected GroupCompator () {
         super(AirportWritable.class, true);
-        
+
     }
+    
 }
