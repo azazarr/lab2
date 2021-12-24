@@ -19,7 +19,7 @@ public class AirportWritable {
         this.IND = z;
     }
 
-    @Override
+
     public int getAIRID() {
         return AIRID;
     }
