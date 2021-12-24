@@ -23,5 +23,6 @@ public class AirportWritable {
 
     public void readFiels(DataInput dataInput) throws IOException {
         dataOutput.writeInt(AIRID);
+        dataOutput
     }
 }
