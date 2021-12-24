@@ -1,5 +1,8 @@
 package LAB2;
 
-public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable,{
+
+
+public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
+
 
 }
