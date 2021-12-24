@@ -21,7 +21,7 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
         return AIRID;
     }
 
-
+    @Override
     public void readFields(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(AIRID);
         dataOutput.writeInt(IND);
