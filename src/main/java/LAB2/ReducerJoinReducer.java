@@ -16,6 +16,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         double counter = 0;
         double totalDelay = 0;
         double min = Double.MAX_VALUE();
-        double max
+        double max = Double.MIN_VALUE();
+        
     }
 }
