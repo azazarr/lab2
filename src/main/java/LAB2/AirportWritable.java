@@ -34,7 +34,7 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
         IND = dataInput.readInt();
     }
 
-
+    @Override
     public int CompareTo(AirportWritable o) {
         if (AIRID == o.AIRID)
             return IND - o.IND;
