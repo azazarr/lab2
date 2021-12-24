@@ -10,7 +10,7 @@ import org.apache.hadoop.io.LongWritable;
 public class AirportWritable {
     int AIRID;
 
-    
+    puvlic Air
 
     public int getAIRID() {
         return AIRID;
