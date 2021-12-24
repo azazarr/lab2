@@ -23,7 +23,7 @@ public class WordCountApp {
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FligthMapper.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportMapper.class);
 
-        job.setPartitionerClass();
+        job.setPartitionerClass(AirportPartitioner);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
