@@ -11,6 +11,7 @@ import org.apache.hadoop.io.LongWritable;
 
 public class AirportWritable {
     int AIRID, IND;
+    private DataOutput dataOutput;
 
     public AirportWritable(int x, int z){
         this.AIRID = x;
