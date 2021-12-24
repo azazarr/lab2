@@ -22,7 +22,8 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
             double delay = Double.parseDouble(iterator.next().toString());
             counter++;
             totalDelay += delay;
-            max = Math.max(delay,)
+            max = Math.max(delay, max);
+            
         }
     }
 }
