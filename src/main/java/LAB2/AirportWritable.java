@@ -1,7 +1,7 @@
 package LAB2;
 
 import org.apache.hadoop.io.WritableComparable;
-import org.apache.hadoop.io.Data;
+import org.apache.hadoop.io.DataIn;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.io.LongWritable;
