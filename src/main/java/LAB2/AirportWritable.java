@@ -25,7 +25,7 @@ public class AirportWritable {
     }
 
     @Override
-    public void readFiels(DataOutput dataInput) throws IOException {
+    public void readFiels(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(AIRID);
         dataOutput.writeInt(IND);
         
@@ -41,7 +41,7 @@ public class AirportWritable {
     public int CompareTo(AirportWritable o) {
         if (AIRID == o.AIRID)
             return IND - o.IND;
-        return AIRID - o.AIRID
+        return AIRID - o.AIRID;
     }
 
 }
