@@ -12,21 +12,25 @@ import org.apache.hadoop.io.LongWritable;
 public class AirportWritable {
     int AIRID, IND;
 
+    @Override
     public AirportWritable(int x, int z){
         this.AIRID = x;
         this.IND = z;
     }
 
+    @Override
     public int getAIRID() {
         return AIRID;
     }
 
+    @Override
     public void readFiels(DataOutput dataInput) throws IOException {
         dataOutput.writeInt(AIRID);
         dataOutput.writeInt(IND);
         
     }
 
+    @Override
     public void write(DataInput dataInput) throws IOException {
         AIRID = dataInput.readInt();
         IND = dataInput.readInt();

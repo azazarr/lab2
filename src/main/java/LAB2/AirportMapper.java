@@ -17,7 +17,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, T
                 String[] airposrts = value.toString().split("");
                 if (key.get() >= 0 ) {
                     String airportName = removeQuote(airposrts[AIR_ID]);
-                    context.write(new AirportWritable(Integer, parseInt(airportName)), new Text(airposrts[helper]));
+                    context.write(new AirportWritable(Integer, parseInt(airportName), 0), new Text(airposrts[helper]));
                 }
     }
 
