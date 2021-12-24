@@ -7,7 +7,7 @@ import java.io.IOException;
 public class AirportWritable {
     int AIRID, IND;
 
-    public 
+    public AirportWritable
 
     public AirportWritable(int x, int z){
         this.AIRID = x;
