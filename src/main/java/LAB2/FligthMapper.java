@@ -3,8 +3,7 @@ package LAB2;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Partitioner;
-import org.apache.hadoop.io.LongWritable;
+
 import java.io.IOException;
 
 public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
@@ -15,8 +14,8 @@ public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Te
     protected void map (LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] delays = value.toString().split(",");
         if (key.get() > 0) {
-            if (!delays[DEL].isEMpty()) {
-                context.write(new AirportWritable(Integer.parseInt(delays[ID]), FID), new Text(delays[DELAY]));
+            if (!delays[DEL].isEmpty()) {
+                context.write(new AirportWritable(Integer.parseInt(delays[ID]), FID), new Text(delays[DEL]));
             }
         }
     }
