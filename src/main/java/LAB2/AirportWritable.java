@@ -13,7 +13,7 @@ public class AirportWritable {
     int AIRID, IND;
 
 
-    @Override
+
     public AirportWritable(int x, int z){
         this.AIRID = x;
         this.IND = z;
