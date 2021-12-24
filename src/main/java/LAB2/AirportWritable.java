@@ -28,8 +28,6 @@ public class AirportWritable {
     }
 
     public void write(DataInput dataInput) throws IOException {
-        dataOutput.writeInt(AIRID);
-        dataOutput.writeInt(IND);
-
+        
     }
 }
