@@ -29,13 +29,13 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
     }
 
     @Override
-    public void write(DataInput dataInput) throws IOException {
-        AIRID = dataInput.readInt();
+    public void write(DataOutput dataOutput) throws IOException {
+        AIRID = dataOutput.readInt();
         IND = dataInput.readInt();
     }
 
     @Override
-    public int CompareTo(AirportWritable o) {
+    public int compareTo(AirportWritable o) {
         if (AIRID == o.AIRID)
             return IND - o.IND;
         return AIRID - o.AIRID;
