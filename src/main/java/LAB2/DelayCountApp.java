@@ -20,7 +20,7 @@ public class WordCountApp {
         Job job = Job.getInstance();
         job.setJarByClass(WordCountApp.class);
         job.setJobName("Delay count");
-        MultipleInputs.addInputPath(job, new Path(args[0]));
+        MultipleInputs.addInputPath(job, new Path(args[0]), Text);
         MultipleInputs.addInputPath(job, new Path(args[1]));
         job.setMapperClass(WordMapper.class);
         job.setReducerClass(WordReducer.class);
