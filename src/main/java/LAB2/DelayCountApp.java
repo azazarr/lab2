@@ -24,7 +24,7 @@ public class WordCountApp {
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportMapper.class);
 
         job.setPartitionerClass(AirportPartitioner.class);
-        job.setG
+        job.setGroupingComparatorClass();
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
