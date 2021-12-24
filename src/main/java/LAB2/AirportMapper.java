@@ -16,7 +16,8 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, T
             InterruptedException {
                 String[] airposrts = value.toString().split("");
                 if (key.get() >= 0 ) {
-                    String airportName = removeQuote(airposrts)
+                    String airportName = removeQuote(airposrts[AIR_ID]);
+                    
                 }
     }
 
