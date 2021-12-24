@@ -13,7 +13,7 @@ public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Te
     private static final int FID = 0;
 
     protected void map (LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        
+        if (key.get )
     }
 
 }
