@@ -25,6 +25,6 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
             max = Math.max(delay, max);
             min = Math.min(delay, min);
         }
-        String resV = String.format("")
+        String resV = String.format("%s")
     }
 }
