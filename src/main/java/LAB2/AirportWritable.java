@@ -1,38 +1,44 @@
 package LAB2;
 
 import org.apache.hadoop.io.WritableComparable;
+
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Partitioner;
-import org.apache.hadoop.io.LongWritable;
-
-public class AirportWritable {
+public class AirportWritable implements WritableComparable<AirportWritable> {
     int AIRID, IND;
 
-    @Override
+    public AirportWritable () {}
+
     public AirportWritable(int x, int z){
         this.AIRID = x;
         this.IND = z;
     }
 
-    @Override
+
     public int getAIRID() {
         return AIRID;
     }
 
     @Override
-    public void readFiels(DataOutput dataInput) throws IOException {
-        dataOutput.writeInt(AIRID);
-        dataOutput.writeInt(IND);
+    public void readFields(DataInput dataInput) throws IOException {
+        AIRID = dataInput.readInt();
+        IND = dataInput.readInt();
         
     }
 
     @Override
-    public void write(DataInput dataInput) throws IOException {
-        AIRID = dataInput.readInt();
-        IND = dataInput.readInt();
+    public void write(DataOutput dataOutput) throws IOException {
+        dataOutput.writeInt(AIRID);
+        dataOutput.writeInt(IND);
     }
+
+    @Override
+    public int compareTo(AirportWritable o) {
+        if (AIRID == o.AIRID)
+            return IND - o.IND;
+        return AIRID - o.AIRID;
+    }
+
 }
