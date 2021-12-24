@@ -1,6 +1,6 @@
 package LAB2;
 
-import org.apache.
+import org.apache.hadoop.
 
 public class ReducerJoinReducer {
 }
