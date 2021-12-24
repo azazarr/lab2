@@ -8,11 +8,11 @@ import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.io.LongWritable;
 
 public class AirportWritable {
-    int AIRID;
+    int AIRID, IND;
 
     public AirportWritable(int x, int z){
         this.AIRID = x;
-        
+        this.IND = 
     }
 
     public int getAIRID() {
