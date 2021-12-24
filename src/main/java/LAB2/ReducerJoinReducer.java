@@ -11,6 +11,6 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
 
     public void reduce(AirportWritable key, Iterable<Text> values, Context context)
         throws IOException, InterruptedException {
-        Iterable<Text> iterator
+        Iterable<Text> iterator = values.
     }
 }
