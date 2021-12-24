@@ -19,7 +19,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         double min = Double.MAX_VALUE();
         double max = Double.MIN_VALUE();
         while (iterator.hasNext()) {
-            
+            double delay 
         }
     }
 }
