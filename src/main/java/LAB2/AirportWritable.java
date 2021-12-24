@@ -11,7 +11,8 @@ public class AirportWritable {
     int AIRID;
 
     public AirportWritable(int x, int z){
-        this.AIRID = 
+        this.AIRID = x;
+        
     }
 
     public int getAIRID() {
