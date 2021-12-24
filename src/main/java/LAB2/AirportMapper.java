@@ -1,6 +1,8 @@
 package LAB2;
 
 import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.LongWritable;
 
 
 public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
