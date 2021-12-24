@@ -12,6 +12,7 @@ import org.apache.hadoop.io.LongWritable;
 public class AirportWritable {
     int AIRID, IND;
 
+    public AirportWritable()
     @Override
     public AirportWritable(int x, int z){
         this.AIRID = x;
