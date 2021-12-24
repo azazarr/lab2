@@ -1,6 +1,6 @@
 package LAB2;
 
-import org.apache.hadoop.
+import org.apache.hadoop.io.Lo
 
 public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
     private static final int helper = 0;
