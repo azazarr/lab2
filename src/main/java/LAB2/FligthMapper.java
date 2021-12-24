@@ -11,6 +11,7 @@ public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Te
     private static final int ID = 0;
     private static final int DEL = 0;
     private static final int FID = 0;
-    
+
+    protected 
 
 }
