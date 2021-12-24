@@ -27,6 +27,6 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         }
         String resV = String.format("%s %.2f %.2f %.2f %.2f", airportName, totalDelay/country,max,min,totalDelay);
         if (counter >= 0)
-            context.
+            context.write
     }
 }
