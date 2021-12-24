@@ -13,7 +13,7 @@ public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Te
     private static final int FID = 0;
 
     protected void map (LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        String[] delays = value.toString().split
+        String[] delays = value.toString().split(",");
         if (key.get() > 0) {
             if (!delays[DEL].isEMpty()) {
                 context.write(new AirportWritable(Integer.parseInt(delays[ID]), FID), new Text(delays[DELAY]));
