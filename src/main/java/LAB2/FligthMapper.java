@@ -15,7 +15,7 @@ public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Te
     protected void map (LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
             if (!(delays[DEL].isEMpty()) {
-                concert.write
+                concert.write(new)
             }
         }
     }
