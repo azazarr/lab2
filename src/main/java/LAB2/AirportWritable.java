@@ -39,6 +39,7 @@ public class AirportWritable {
 
     @Override
     public int CompareTo(AirportWritable o) {
+        if
 
     }
 
