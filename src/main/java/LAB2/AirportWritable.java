@@ -24,20 +24,20 @@ public class AirportWritable {
         return AIRID;
     }
 
-    @Override
+
     public void readFields(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(AIRID);
         dataOutput.writeInt(IND);
         
     }
 
-    @Override
+
     public void write(DataInput dataInput) throws IOException {
         AIRID = dataInput.readInt();
         IND = dataInput.readInt();
     }
 
-    @Override
+
     public int CompareTo(AirportWritable o) {
         if (AIRID == o.AIRID)
             return IND - o.IND;
