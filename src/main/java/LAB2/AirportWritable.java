@@ -18,4 +18,6 @@ public class AirportWritable {
     public int getAIRID() {
         return AIRID;
     }
+
+    public 
 }
