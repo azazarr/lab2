@@ -7,5 +7,5 @@ import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.io.LongWritable;
 
 public class AirportPartitioner {
-    
+    @Override
 }
