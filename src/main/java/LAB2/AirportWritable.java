@@ -40,7 +40,7 @@ public class AirportWritable {
     @Override
     public int CompareTo(AirportWritable o) {
         if (AIRID == o.AIRID)
-            return 
+            return IND - o.IND
 
     }
 
