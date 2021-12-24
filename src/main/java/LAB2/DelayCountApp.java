@@ -25,7 +25,7 @@ public class WordCountApp {
 
         job.setPartitionerClass(AirportPartitioner.class);
         job.setGroupingComparatorClass(GroupCompator.class);
-        job.setReducerClass(Re);
+        job.setReducerClass(ReducerJoinReducer);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
