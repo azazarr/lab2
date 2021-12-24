@@ -7,5 +7,5 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 
 public class ReducerJoinReducer {
-    public class 
+    public class
 }
