@@ -1,6 +1,6 @@
 package LAB2;
 
-import 
+import org.apache.
 
 public class ReducerJoinReducer {
 }
