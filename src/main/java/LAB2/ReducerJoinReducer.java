@@ -12,7 +12,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
 
     public void reduce(AirportWritable key, Iterable<Text> values, Context context)
         throws IOException, InterruptedException {
-        Iterable<Text> iterator = values.iterator();
+        Iteratre<Text> iterator = values.iterator();
         String airportName = iterator.next().toString();
         double counter = 0;
         double totalDelay = 0;
