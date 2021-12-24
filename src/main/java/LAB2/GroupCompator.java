@@ -5,7 +5,7 @@ import org.apache.hadoop.io.WritableComparator;
 
 public class GroupCompator extends WritableComparator {
     protected GroupCompator () {
-       super(AirportWritable.class)
+       super(AirportWritable.class, true)
 
     }
 
