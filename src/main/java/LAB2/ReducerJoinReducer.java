@@ -20,6 +20,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         double max = Double.MIN_VALUE();
         while (iterator.hasNext()) {
             double delay = Double.parseDouble(iterator.next().toString());
+            counter++;
             
         }
     }
