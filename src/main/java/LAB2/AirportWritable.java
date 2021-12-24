@@ -25,7 +25,7 @@ public class AirportWritable {
     }
 
     @Override
-    public void readFiels(DataOutput dataOutput) throws IOException {
+    public void readFields(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(AIRID);
         dataOutput.writeInt(IND);
         
