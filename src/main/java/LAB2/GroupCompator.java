@@ -11,5 +11,5 @@ public class GroupCompator extends WritableComparable {
 
     }
 
-    public int compare(WritableComparable w1, WritableComparable)
+    public int compare(WritableComparable w1, WritableComparable w2)
 }
