@@ -13,6 +13,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         throws IOException, InterruptedException {
         Iterable<Text> iterator = values.iterator();
         String airportName = iterator.next().toString();
+        double counter = 0;
         
     }
 }
