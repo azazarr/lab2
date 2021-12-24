@@ -26,7 +26,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
             min = Math.min(delay, min);
         }
         String resV = String.format("%s %.2f %.2f %.2f %.2f", airportName, totalDelay/counter,max,min,totalDelay);
-        if (counter >= 0) {
+        if (counter > 0) {
             context.write(new IntWritable(key.getAIRID()), new Text(resV));
         }
         
