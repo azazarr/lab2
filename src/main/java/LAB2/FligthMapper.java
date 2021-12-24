@@ -9,5 +9,9 @@ import java.io.IOException;
 
 public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
     private static final int ID = 0;
-    
+    private static final int DEL = 0;
+    private static final int ID = 0;
+    private static final int ID = 0;
+    private static final int ID = 0;
+
 }
