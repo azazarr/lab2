@@ -19,7 +19,7 @@ public class WordCountApp {
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FligthMapper.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportMapper.class);
 
-        FileOutputFormat
+        FileOutputFormat.set
         job.setPartitionerClass(AirportPartitioner.class);
         job.setGroupingComparatorClass(GroupCompator.class);
         job.setReducerClass(ReducerJoinReducer.class);
