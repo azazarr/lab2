@@ -8,8 +8,8 @@ import java.io.IOException;
 
 
 public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
-    private static final int helper = 1;
-    private static final int AIR_ID = 0;
+    private static final int helper = 0;
+    private static final int AIR_ID = 1;
     private static final int ID = 0;
 
     public static String removeQuote(String s) {
@@ -22,7 +22,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, T
                 String[] airposrts = value.toString().split("");
                 if (key.get() >= 0 ) {
                     String airportName = removeQuote(airposrts[AIR_ID]);
-                    context.write(new AirportWritable(Integer.parseInt(airportName), 0), new Text(airposrts[helper]));
+                    context.write(new AirportWritable(Integer.parseInt(airportName), AIR_ID), new Text(airposrts[helper]));
                 }
     }
 
