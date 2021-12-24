@@ -6,7 +6,7 @@ import org.apache.hadoop.io.WritableComparator;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.v2.app.webapp.dao.CounterGroupInfo;
 
-public class GroupCompator extends WritableComparable {
+public class GroupCompator extends Writable {
     protected GroupCompator () {
         super(AirportWritable.class, true);
 
