@@ -10,5 +10,6 @@ public class GroupCompator extends WritableComparable {
         super(AirportWritable.class, true);
 
     }
-    
+
+    public 
 }
