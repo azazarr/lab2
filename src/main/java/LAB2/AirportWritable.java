@@ -29,6 +29,6 @@ public class AirportWritable {
 
     public void write(DataInput dataInput) throws IOException {
         AIRID = dataInput.readInt();
-        IND = 
+        IND = dataInput
     }
 }
