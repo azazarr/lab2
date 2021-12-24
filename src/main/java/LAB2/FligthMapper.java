@@ -8,5 +8,5 @@ import org.apache.hadoop.io.LongWritable;
 import java.io.IOException;
 
 public class FligthMapper extends Mapper<LongWritable, Text, AirportWritable, Text> {
-    
+    private static 
 }
