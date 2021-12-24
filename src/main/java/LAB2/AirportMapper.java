@@ -14,7 +14,7 @@ public class AirportMapper extends Mapper<LongWritable, Text, AirportWritable, T
     private static final int AIR_ID = 0;
     private static final int ID = 0;
 
-    public static String removeQuote
+    public static String removeQuote(s)
 
     protected void map (LongWritable key, Text value, Context context) throws IOException,
             InterruptedException {
