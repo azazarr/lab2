@@ -14,6 +14,7 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
         Iterable<Text> iterator = values.iterator();
         String airportName = iterator.next().toString();
         double counter = 0;
-        double totalDela
+        double totalDelay = 0;
+        
     }
 }
