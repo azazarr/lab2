@@ -9,6 +9,6 @@ import org.apache.hadoop.io.LongWritable;
 public class AirportPartitioner {
     @Override
     public int getPartition(AirportWritable key, Text value, int nReduceTask){
-        return key.get
+        return key.getAIR_ID
     }
 }
