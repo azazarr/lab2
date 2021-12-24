@@ -1,4 +1,3 @@
 package LAB2;
 
-public class DelayCountApp {
-}
+private static final int ID = 0;
