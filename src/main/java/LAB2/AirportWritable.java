@@ -12,7 +12,7 @@ import org.apache.hadoop.io.LongWritable;
 public class AirportWritable {
     int AIRID, IND;
 
-    
+
     @Override
     public AirportWritable(int x, int z){
         this.AIRID = x;
@@ -36,4 +36,8 @@ public class AirportWritable {
         AIRID = dataInput.readInt();
         IND = dataInput.readInt();
     }
+
+    @Override
+    
+
 }
