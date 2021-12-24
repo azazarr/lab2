@@ -1,2 +1,4 @@
-package LAB2;public class AirportWritable {
+package LAB2;
+
+public class AirportWritable {
 }
