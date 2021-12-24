@@ -38,6 +38,8 @@ public class AirportWritable {
     }
 
     @Override
-    public int CompareTo(AirportWritable 0)
+    public int CompareTo(AirportWritable o) {
+
+    }
 
 }
