@@ -23,7 +23,8 @@ public class ReducerJoinReducer extends  Reducer<AirportWritable,Text, IntWritab
             counter++;
             totalDelay += delay;
             max = Math.max(delay, max);
-            min = Math.min(delay, min)
+            min = Math.min(delay, min);
         }
+        
     }
 }
