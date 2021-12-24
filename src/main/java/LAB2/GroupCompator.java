@@ -6,5 +6,5 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.v2.app.webapp.dao.CounterGroupInfo;
 
 public class GroupCompator extends WritableComparable {
-    protected Croup
+    protected GroupCompator
 }
