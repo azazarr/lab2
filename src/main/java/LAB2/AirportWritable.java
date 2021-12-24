@@ -41,8 +41,7 @@ public class AirportWritable {
     public int CompareTo(AirportWritable o) {
         if (AIRID == o.AIRID)
             return IND - o.IND;
-        return 
-
+        return AIRID - o.AIRID
     }
 
 }
